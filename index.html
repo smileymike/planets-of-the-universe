@@ -3,7 +3,19 @@ layout: default
 ---
 
 <h1>Planets of the Universe</h1>
-<p>Lots of planets in the universe!</p>
+<p>A planet is an astronomical object orbiting a star or steller remnant that is massive enough to be rounded by its own gravity, is not massive enough to cause thermonuclear fusion, and has cleared its neighbouring region of planetesimals.</p>
+
+<h2>Types of Planets</h2>
+
+<ol>
+{% for planet in site.categories.planet-type %}
+	<li>
+		<a href="#">{{planet.title}}</a>
+		{{planet.content}}
+	</li>
+{% endfor %}
+</ol>
+
 
 <h2>Recently Discovered Planets</h2>
 
