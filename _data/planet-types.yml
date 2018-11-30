@@ -1,0 +1,11 @@
+- title: Drawf
+  folder: drawf
+  content: 'A **drawf planet** is a plantary-mass object that is neither a planet nor a satellite.'
+
+- title: Terrestrial
+  folder: terrestrial
+  content: 'A **terrestrial planet, telluric planet** or **rocky planet** is a planet that is composed primarily of silicate rocks or metals.'
+
+- title: Gas Giant
+  folder: gas-giant
+  content: 'A **gas giant** is a large plantary that is not primarily composed of rock or other solid matter.'
