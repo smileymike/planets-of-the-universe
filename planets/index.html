@@ -5,37 +5,10 @@ layout: default
 <h1>Planets</h1>
 
 <h2>Drawf</h2>
-
-<ul>
-	{% for planet in site.pages %}
-		{% if planet.type == 'dwarf' %}
-			<li>
-				{{planet.title}}
-			</li>
-		{% endif %}
-	{% endfor %}
-</ul>
+{% include planet-list.html type='dwarf' %}
 
 <h2>Terrestrial</h2>
+{% include planet-list.html type='terrestrial' %}
 
-<ul>
-	{% for planet in site.pages %}
-		{% if planet.type == 'terrestrial' %}
-			<li>
-				{{planet.title}}
-			</li>
-		{% endif %}
-	{% endfor %}
-</ul>
-
-<h2>Terrestrial</h2>
-
-<ul>
-	{% for planet in site.pages %}
-		{% if planet.type == 'gas-giant' %}
-			<li>
-				{{planet.title}}
-			</li>
-		{% endif %}
-	{% endfor %}
-</ul>
+<h2>Gas Giants</h2>
+{% include planet-list.html type='gas-giant' %}
