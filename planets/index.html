@@ -8,8 +8,34 @@ layout: default
 
 <ul>
 	{% for planet in site.pages %}
-		<li>
-			{{planet.title}}
-		</li>
+		{% if planet.type == 'dwarf' %}
+			<li>
+				{{planet.title}}
+			</li>
+		{% endif %}
+	{% endfor %}
+</ul>
+
+<h2>Terrestrial</h2>
+
+<ul>
+	{% for planet in site.pages %}
+		{% if planet.type == 'terrestrial' %}
+			<li>
+				{{planet.title}}
+			</li>
+		{% endif %}
+	{% endfor %}
+</ul>
+
+<h2>Terrestrial</h2>
+
+<ul>
+	{% for planet in site.pages %}
+		{% if planet.type == 'gas-giant' %}
+			<li>
+				{{planet.title}}
+			</li>
+		{% endif %}
 	{% endfor %}
 </ul>
