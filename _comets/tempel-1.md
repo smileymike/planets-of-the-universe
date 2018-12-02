@@ -1,4 +1,5 @@
 ---
+layout: comets
 title: "Tempel 1"
 img: "comets/tempel-1.jpg"
 ---

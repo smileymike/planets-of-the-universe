@@ -1,5 +1,5 @@
 ---
-
+layout: comets
 title: "Halley's Comet"
 img: "comets/halleys.jpg"
 ---
